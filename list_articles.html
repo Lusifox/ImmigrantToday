@@ -135,9 +135,38 @@
             <li class="nav-menu_item">
               <a>Блог</a>
             </li>
-            <div class="pic">
+            <!-- <div class="pic">
               <img src="pic/ic_search.svg" width="40" height="40">
-            </div>
+            </div> -->
+            <li class="nav-menu_item">
+
+              <div class="search">
+                <input type="text" class="searchText" placeholder="Введите поисковой запрос">
+                <a class="searchBtn">
+                  <img src="pic/ic_search.svg" width="40" height="40">
+                </a>
+              </div>
+              <!-- <a class="nav-link d-flex align-items-center" id="navbar-search" href="#">
+                <div class="pic">
+                  <img src="pic/ic_search.svg" width="40" height="40">
+                </div>
+                <div class="pic">
+                  <img src="pic/ic_closesearch.svg" width="40" height="40">
+                </div>
+
+                <span style="width:0;pointer-events:none;">&nbsp;
+                </span>
+              </a>
+              <div class="search animated">
+                <form action="/search/all" method="GET">
+                  <div class="searchform-wrapper d-flex">
+                    <div class="form-control form-control-sm d-flex align-items-center">
+                      <input class="form-control-reset w-100 text-placeholder-4" name="q" type="text" placeholder="Поиск аниме, манги, людей и персонажей" autocomplete="off" data-search="true" data-search-id="searchsuggestions" data-ajax-url="/search/all?type=small" data-search-min-query-len="3" data-search-target=".form-control">
+                    </div>
+                  </div>
+                </form>
+              </div> -->
+            </li>
             <div class="pic">
               <button type="button" class="btn btn-outline-danger text-nowrap bold">
                 Оценить шансы
@@ -150,41 +179,323 @@
   </header>
 
   <main>
+    <div class="container-xl">
+      <div class="row justify-content-between align-items-center articles-head">
+        <h2 class="bold col">Имиграция в Канаду</h2>
+        <p class="col justify-content-end">Показано с 1 по 9 из 535</p>
+      </div>
+      <div class="close row align-items-center">
+        <span class="col">
+          Хотите переехать в Канаду?
+          <a href="">Бесплатно оцените свои шансы!</a>
+        </span>
+        <button type="button" class="btn-close btn-lg bg-light col justify-content-end" aria-label="Close">
+        </button>
+      </div>
+    </div>
 
+    <section class="container-xl">
+      <ul class="popularity row justify-content-between">
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic1.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body">
+                <h4 class="card-title">Вузы Канады, после которых вы найдете работу!</h4>
+                <p class="card-text">В некоторых вузах Канады трудоустраиваются почти 90% выпускников</p>
+              </div>
+            </div>
+          </a>
+        </li>
 
-    <section>
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic2.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h4 class="card-title">Онтарио восполняет нехватку квалифицированных специалистов</h4>
+                <p class="card-text">30 сентября стартует второй тур финансирования Фонда развития профессиональных навыков.</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic3.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h5 class="card-title">Акции от канадский колледжей: стипендия $ 10 000 и бесплатный...</h5>
+                <p class="card-text">Воспользуйтесь возможностью выгодно получить образование в Канаде.</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="popularity row justify-content-between">
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic4.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body">
+                <h4 class="card-title">Новая Шотландия пригласла иммигрировать предпринимателей</h4>
+                <p class="card-text">Провинция провела отбор для двух потоков.</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic5.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h4 class="card-title">Одна из провинций Канады будет трудоустраивать иммигрантов</h4>
+                <p class="card-text">В регионе разработали систему,которая поможет одновременно и соискателям, и компаниям, в которых открыта вакансии.</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic6.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h5 class="card-title">Главные цели Канады на ближайшее время</h5>
+                <p class="card-text">Премьер-министр назвал 5 первостепенных пунктов.</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="popularity row justify-content-between">
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic7.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body">
+                <h4 class="card-title">Вузы Канады, после которых вы найдете работу!</h4>
+                <p class="card-text">В некоторых вузах Канады трудоустраиваются почти 90% выпускников</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic8.png" class="card-img-top">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h4 class="card-title">Онтарио восполняет нехватку квалифицированных специалистов</h4>
+                <p class="card-text">30 сентября стартует второй тур финансирования Фонда развития профессиональных навыков.</p>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col">
+          <a href="">
+            <div class="card">
+              <img src="pic/article_pic9.png" class="card-img-top" alt="...">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h5 class="card-title">Акции от канадский колледжей: стипендия $ 10 000 и бесплатный...</h5>
+                <p class="card-text">Воспользуйтесь возможностью выгодно получить образование в Канаде.</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <nav aria-label="Page navigation row ">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link nav-icon-l" href="#" aria-label="Previous"></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item inviz"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item inviz"><a class="page-link" href="#">...</a></li>
+          <li class="page-item"><a class="page-link" href="#">535</a></li>
+          <li class="page-item">
+            <a class="page-link nav-icon-r" href="#" aria-label="Previous"></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="container-xl pt-3">
+      <div class="section-head row align-items-center justify-content-between">
+        <h2 class="col-12 col-xl-8">Популярные предложения</h2>
+        <a class="col-12 col-xl-4" href="">Смотреть все
+          <span>
+            <img src="pic/ic_arrow.svg" width="15" height="12">
+          </span>
+        </a>
+      </div>
+      <ul class="popularity row justify-content-between">
+        <li class="card-item bord col-12 col-md-6 col-xl-3">
+          <a href="">
+            <div class="card">
+              <img src="pic/popul_pic1.png" class="card-img-top" alt="...">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body">
+                <h5 class="card-title">Консультация по иммиграции или учебе</h5>
+                <p class="card-text">Нужно больше информации о переезде в Канаду? Оцените свои шансы у лицензированного иммиграционного консультатнта!</p>
+                <div class="card-price">
+                  <ul class="prices">
+                    <li>
+                      5950 ₽ 
+                    </li>
+                    <li class="CAD">
+                      $100 CAD
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-danger bold btn-inf">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col-12 col-md-6 col-xl-3">
+          <a href="">
+            <div class="card">
+              <img src="pic/popul_pic2.png" class="card-img-top" alt="...">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h5 class="card-title">Онлайн-изучение английского языка</h5>
+                <p class="card-text">Прокачайте английский в крупнейшей канадской языковой школе,не выходя из дома.Занятия в удобное для вас время!</p>
+                <div class="card-price">
+                  <ul class="prices">
+                    <li>
+                      7440 ₽ 
+                    </li>
+                    <li class="CAD">
+                      $130 CAD
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-danger bold btn-inf">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col-12 col-md-6 col-xl-3">
+          <a href="">
+            <div class="card">
+              <img src="pic/popul_pic3.png" class="card-img-top" alt="...">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body"> 
+                <h5 class="card-title">Написание резюме для различных профессий</h5>
+                <p class="card-text">Хотите найти работу в Канаде? Вам нужно профессиональное резюме.</p>
+                <div class="card-price">
+                  <ul class="prices">
+                    <li>
+                      5950 ₽ 
+                    </li>
+                    <li class="CAD">
+                      $100 CAD
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-danger bold btn-inf">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="card-item bord col-12 col-md-6 col-xl-3">
+          <a href="">
+            <div class="card">
+              <img src="pic/popul_pic4.png" class="card-img-top" alt="...">
+              <img src="pic/logo_mini.svg" class="logo-over-card">
+              <div class="card-body">
+                <h5 class="card-title">Как найти работу в Канаде</h5>
+                <p class="card-text"> Обучающий курс создан при участии канадского специалиста по найму персонала с 9-летним опытом работы в Канаде.</p>
+                <div class="card-price">
+                  <ul class="prices">
+                    <li>
+                      29950 ₽ 
+                    </li>
+                    <li class="CAD">
+                      $515 CAD
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-outline-danger bold btn-inf">
+                    Подробнее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- <div class="slider row">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+      </div> -->
+    </section>
+
+    <section class="container-xl">
       <div class="join-container">
-        <div class="join-text">
+        <div class="join col justify-content-between">
           <h3 class="join-header">
             Стать членом сообщества
           </h3>  
-          
+
           <p class="join_text">
             Получите профессиональные советы об иммиграции в Канаду, новости, стратегии и опыт других людей.
           </p>
-          <p>Нас уже - <span class="bold">55574</span> человек (а)</p>
+          <p class="join_text">
+            Нас уже - <span class="bold">55574</span> человек (а)
+          </p>
         </div>
 
-        <form class="signup-form" name="signup-form" autocomplete="on">
+        <form class="signup-form col" name="signup-form" autocomplete="on">
           <label for="signup-form" class="signup-form__label">
-            <input class="form-control form-control-lg" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
-            <input class="form-control form-control-lg" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
-            <input class="form-control form-control-lg" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
-            <div class="input-group flex-nowrap ">
-              <span class="input-group-text" id="addon-wrapping">9 + 3 =</span>
-              <input type="text" class="form-control form-control-lg" placeholder="Введите ответ" aria-label="Username" aria-describedby="addon-wrapping">
+            <div class="row">
+              <input class="form-control form-control-lg col" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
+              <input class="form-control form-control-lg col" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
+            </div>
+            <div class="row">
+              <input class="form-control form-control-lg col" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
+              <div class="input-group flex-nowrap col">
+                <span class="input-group-text" id="addon-wrapping">9 + 3 =</span>
+                <input type="text" class="form-control form-control-lg" placeholder="Введите ответ" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
             </div>
           </label>
           <label>
-            <div class="checkbox__icon">
+            <div class="checkbox__icon row">
               <input class="checkbox" type="checkbox" id="checkbox" name="checkbox"value="user-agreement" required>
-              <svg>
-                <use href="pic/ic_tick.svg#checked"></use>
-              </svg>
+              <img src="pic/ic_tick.svg">
             </div>
             Я согласен(а) на обработку моих персональных данных
+
           </label>
-          
+
           <div class="btn_wrapper">
             <button type="button" class="btn btn-danger btn-lg">
               Зарегистироваться
@@ -298,7 +609,7 @@
             </li>
           </ul>
           
-          <a class="socials_youtube" href="#">
+          <a class="socials_yt" href="#">
             <img src="pic/youtube.svg">
             
           </a>
@@ -311,14 +622,14 @@
     </div>
   </div>
 
-  <div class="address_wrapper container-xl">
-    <div class="copyright">
-      <span class="copyright_heading">&#169;2015-2021 Imigrant.Today</span>
+  <div class="copyright container-xl">
+    <div class="copyright_heading col">
+      &#169;2015-2021 Imigrant.Today
+    </div>
+    <div class="col">
       <a href="#">Условия использования</a>
       <a href="#">Политика конфиденциальности</a>
     </div>
-
-    
   </div>
 
 </footer>
