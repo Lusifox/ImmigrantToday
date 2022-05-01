@@ -118,7 +118,7 @@ h4{
 	grid-row: 1;
 }
 .main-image-stack_item2 {
-	grid-column: 10 / span 8;
+	grid-column: 10 / a 8;
 	position: relative;
 	grid-row: 1; 
 	padding-top: 10%; 
@@ -418,7 +418,7 @@ section{
 	font-size: 20px;
 	line-height: 30px;
 }
-span {
+a {
 	color: red;
 }
 .join_text {
@@ -534,44 +534,146 @@ span {
 	text-decoration: none;
 	color: #E55241;
 }
-.close span{
+.close a{
 	padding: 20px 15px;
 	color: #000000;
 }
 /*end list_articles*/
 
+
 /*page article*/
 
 /*end article*/
+
 
 /*page contacts*/
 
 /*end contacts*/
 
+.question{
+	box-shadow: -5px 0px 10px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 30px 15px;
+}
+.question button{
+	width: 100%;
+	text-align: left;
+	background: url(pic/ic_wh_arrow.svg) no-repeat;
+	background-size: auto;
+	background-position: 93%;
 
-/*page about project*/
-
-.contacts{
+	background-color: #dc3545;
+}
+.contacts,
+.about-project{
 	display: flex;
 	justify-content: space-between;
 
 	font-size: 16px;
 	line-height: 24px;
 }
+.contacts-head,
+.about-head{
+	font-size: 20px;
+	line-height: 30px;
+}
+
+/*page about project*/
+
+.values, .copyright,
+.megaphone, .history,
+.special, .handwpen,
+.roundcopy{
+	margin: 35px 0px;
+}
 .about{
 	padding: 15 px;
 }
+.about-project a{
+	text-decoration: none;
+	color: #E55241;
+}
+.about-project a:hover{
+	text-decoration: none;
+	color: #E55241;
+}
 .ic-copyright{
-	background: url(pic/ic-copyright.svg);
-	background-repeat: no-repeat;
+	padding-left: 40px;
+
+	background: url(pic/ic_copyright.svg) no-repeat;
 	background-size: auto;
 }
 .btn-danger{
 	background-color: #E55241;
-    border-color: #E55241;
+	border-color: #E55241;
+}
+.about-head{
+	margin-bottom: 30px;
+}
+.history-head{
+	padding-left: 40px;
+
+	background: url(pic/ic_pen.svg) no-repeat;
+	background-size: auto;
+}
+.special-head{
+	padding-left: 40px;
+
+	background: url(pic/ic_special.svg) no-repeat;
+	background-size: auto;
+}
+.quote {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  padding: 33px 15px 33px 45px;
+  border-left: 5px solid #468e87;
+
+  background: url(pic/ic_quote.svg) no-repeat;
+  background-position: 2% 35%;
+  background-color: #f7f7f7;
 }
 
+.handwpen-head{
+	padding-left: 40px;
+
+	background: url(pic/ic_handwpen.svg) no-repeat;
+	background-size: auto;
+}
+.roundcopy-head{
+	padding-left: 40px;
+
+	background: url(pic/ic_roundcopyright.svg) no-repeat;
+	background-size: auto;
+}
+.megaphone-head{
+	padding-left: 40px;
+
+	background: url(pic/ic_megaphone.svg) no-repeat;
+	background-size: auto;
+}
+.values-head{
+	padding-left: 40px;
+
+	background: url(pic/ic_like.svg) no-repeat;
+	background-size: auto;
+}
+.values-list{
+	list-style: none;
+	padding-left: 0;
+}
+.values-it{
+	padding: 7px 15px 7px 40px;
+
+	background: url(pic/main_list.svg) no-repeat;
+	background-size: auto;
+	background-position: left center;
+}
 /*end about project*/
+
+
 .page-footer{
 	background: #272727;
 }
