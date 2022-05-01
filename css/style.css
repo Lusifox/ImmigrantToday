@@ -541,9 +541,15 @@ span {
 /*end list_articles*/
 
 /*page article*/
+
 /*end article*/
 
 /*page contacts*/
+
+/*end contacts*/
+
+
+/*page about project*/
 
 .contacts{
 	display: flex;
@@ -553,15 +559,19 @@ span {
 	line-height: 24px;
 }
 .about{
-	padding: auto;
+	padding: 15 px;
 }
 .ic-copyright{
 	background: url(pic/ic-copyright.svg);
 	background-repeat: no-repeat;
 	background-size: auto;
 }
-/*end contacts*/
+.btn-danger{
+	background-color: #E55241;
+    border-color: #E55241;
+}
 
+/*end about project*/
 .page-footer{
 	background: #272727;
 }
