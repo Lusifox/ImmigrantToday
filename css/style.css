@@ -334,6 +334,15 @@ section{
 .news_item p{
 	padding-top: 10px;
 }
+.news_item button{
+	width: 100%;
+	text-align: center;
+	background: url(pic/ic_wh_arrow.svg) no-repeat;
+	background-size: auto;
+	background-position: 83% 52%;
+
+	background-color: #dc3545;
+}
 .general_list,
 .news_list {
 	background-color: #f3f3f3;
@@ -405,7 +414,7 @@ section{
 .join{
 	background: url(pic/bg_join.svg) no-repeat;
 	border-radius: 10px;
-	padding: 40px 25px 0px;
+	padding: 40px 0px 0px 25px;
 }
 .join-header {
 	padding-left: 70px;
@@ -428,6 +437,8 @@ a {
 	display: flex;
 	justify-content: center;
 }
+
+
 
 .checkbox {
 	display: flex;
@@ -545,8 +556,68 @@ a {
 
 /*end article*/
 
+/*page courses*/
+
+.courses, .book{
+	padding-left: 0px;
+}
+.courses-head{
+	margin: 30px 0px 20px;
+}
+.services p,
+.courses p{
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 35px;
+}
+.courses-list, 
+.book-list{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 0px;
+}
+.card-price-c{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+/*end courses*/
 
 /*page contacts*/
+.contacts{
+	padding-bottom: 10px;
+}
+.contacts img{
+	margin: 35px 0px;
+}
+.contacts-list{
+	list-style: none;
+	padding-left: 0;
+}
+.contacts-it{
+	padding: 7px 15px 7px 20px;
+
+	background: url(pic/ic_circle.svg) no-repeat;
+	background-size: auto;
+	background-position: left center;
+}
+.mail{
+	background: url(pic/ic_mail.svg) no-repeat;
+	background-position: 48% 50%;
+}
+.mail a{
+	text-decoration: none;
+	color: #E55241;
+}
+.mail a:hover {
+	text-decoration: none;
+	color: #E55241;
+}
 
 /*end contacts*/
 
@@ -582,14 +653,11 @@ a {
 
 /*page about project*/
 
-.values, .copyright,
+.values, .copyrght,
 .megaphone, .history,
 .special, .handwpen,
 .roundcopy{
 	margin: 35px 0px;
-}
-.about{
-	padding: 15 px;
 }
 .about-project a{
 	text-decoration: none;
@@ -625,15 +693,15 @@ a {
 	background-size: auto;
 }
 .quote {
-  display: flex;
-  align-items: center;
-  margin: 30px 0;
-  padding: 33px 15px 33px 45px;
-  border-left: 5px solid #468e87;
+	display: flex;
+	align-items: center;
+	margin: 30px 0;
+	padding: 33px 15px 33px 45px;
+	border-left: 5px solid #468e87;
 
-  background: url(pic/ic_quote.svg) no-repeat;
-  background-position: 2% 35%;
-  background-color: #f7f7f7;
+	background: url(pic/ic_quote.svg) no-repeat;
+	background-position: 2% 35%;
+	background-color: #f7f7f7;
 }
 
 .handwpen-head{
