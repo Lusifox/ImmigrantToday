@@ -1,29 +1,31 @@
 body{
 	font-family: "Proxima Nova",sans-serif;
 }
-
+img {
+	max-width: 100%;
+}
 h1{
-	font-size: 48 px;
+	font-size: 48px;
 	font-weight: 700;
-	line-height: 64 px;
+	line-height: 64px;
 }
 
 h2{
-	font-size: 32 px;
+	font-size: 32px;
 	font-weight: 700;
-	line-height: 48 px;
+	line-height: 48px;
 }
 
 h3{
-	font-size: 24 px;
+	font-size: 24px;
 	font-weight: 700;
-	line-height: 36 px;
+	line-height: 36px;
 }
 
 h4{
-	font-size: 20 px;
+	font-size: 20px;
 	font-weight: 700;
-	line-height: 30 px;
+	line-height: 30px;
 }
 .bold {
 	font-weight: bold !important;
@@ -87,13 +89,29 @@ h4{
 }
 
 
-.main-offer{
+.main-offer {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
-	background-color: #F4F4F4;
+	/*background-color: #F4F4F4;*/
 	font-size: 24px;
 	line-height: 36px;
+	background: url(../pic/main-offer-bg.svg) no-repeat right center;
+	background-size: cover;
+	padding: 0;
+}
+.main-offer-container {
+	padding: 120px 0 140px;
+	position: relative;
+}
+.main-offer-woman-img {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	width: 40%;
+}
+.main-offer-woman-img img {
+	max-width: 100%;
 }
 .main-offer_item{
 	list-style: none;
@@ -101,30 +119,29 @@ h4{
 	padding-left: 40px;
 	margin-right: 0;
 
-	background: url(pic/main_list.svg) no-repeat;
+	background: url(../pic/main_list.svg) no-repeat;
 	background-size: contain;
 }
-.main-image-stack{
+/*.main-image-stack{
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	position: relative;
-	background-color: #F4F4F4;
-
-	background: url(pic/bg-offer.svg) no-repeat;
+	background: #F4F4F4 url(../pic/bg-offer.svg) no-repeat;
 	background-size: 100% 100%;
-}
+}*/
 .main-image-stack_item1 {
 	grid-column: 12;
 	grid-row: 1;
 }
-.main-image-stack_item2 {
+/*Это чистой воды порнуха, причем не красивая эротика, а а грязное извращенческое порево...*/
+/*.main-image-stack_item2 {
 	grid-column: 10 / a 8;
 	position: relative;
 	grid-row: 1; 
 	padding-top: 10%; 
 	z-index: 1; 
-}
-.main-image-stack_item2 img {
+}*/
+/*.main-image-stack_item2 img {
 	position: absolute;
 	bottom: 0;
 }
@@ -135,7 +152,7 @@ h4{
 }
 .main-image-stack_item3 img {
 	margin-top: 40px;
-}
+}*/
 .offer-title{
 	font-weight: 700;
 	margin-bottom: 20px;
@@ -145,7 +162,7 @@ h4{
 	flex-direction: column;
 	justify-content: center;
 	width: 620px;
-	padding-left: 60px;
+	/*padding-left: 60px; Откуда вы взяли этот падинг на макете его нет!!! */
 }
 .main-ul-stack {
 	padding-left: 0;
@@ -156,15 +173,12 @@ section{
 	padding: 40px 0px 50px ;
 }
 
-.immigration_sec.container-xl,
-.studies_sec,
-.visa_sec{
+.bg-grey {
 	background-color: #F4F4F4;
 }
 .links{
-	background: url(pic/ic_arrow.svg) no-repeat;
 	background-size: auto;
-	background-position: right center;
+	background: url(../pic/ic_arrow.svg) no-repeat right center;
 }
 .popularity,
 .immigration,
@@ -259,9 +273,7 @@ section{
 	border-radius: 10px !important;
 	height: 100%;
 
-	background: url(pic/logo_mini.svg) no-repeat;
-
-	background-position: 4% 10%;
+	background: url(../pic/logo_mini.svg) no-repeat 4% 10%;
 	background-size: auto;
 }
 
@@ -308,7 +320,7 @@ section{
 	padding: 0px;
 }
 .news_title{
-	background: url(pic/ic_arrow.svg) no-repeat;
+	background: url(../pic/ic_arrow.svg) no-repeat;
 	background-size: auto;
 	background-position: right center;
 	color: #1E222E;
@@ -337,7 +349,7 @@ section{
 .news_item button{
 	width: 100%;
 	text-align: center;
-	background: url(pic/ic_wh_arrow.svg) no-repeat;
+	background: url(../pic/ic_wh_arrow.svg) no-repeat;
 	background-size: auto;
 	background-position: 83% 52%;
 
@@ -384,7 +396,7 @@ section{
 	display: flex;
 	justify-content: center;
 
-	background: url(pic/grey_bg.svg) no-repeat;
+	background: url(../pic/grey_bg.svg) no-repeat;
 	padding: 65px 0;
 }
 .project-text-stack{
@@ -396,7 +408,7 @@ section{
 	margin-left: 30px;
 }
 .project_title{
-	background: url(pic/ic_arrow.svg) no-repeat;
+	background: url(../pic/ic_arrow.svg) no-repeat;
 	background-size: auto;
 	background-position: right center;
 
@@ -412,14 +424,14 @@ section{
 }
 
 .join{
-	background: url(pic/bg_join.svg) no-repeat;
+	background: url(../pic/bg_join.svg) no-repeat;
 	border-radius: 10px;
 	padding: 40px 0px 0px 25px;
 }
 .join-header {
 	padding-left: 70px;
 
-	background: url(pic/logo_mini.svg) no-repeat;
+	background: url(../pic/logo_mini.svg) no-repeat;
 	background-position: 4% 10%;
 	background-size: auto;
 }
@@ -470,7 +482,7 @@ a {
 	cursor: pointer;
 }
 .checkbox__icon:checked {
-	background-image: url(pic/ic_tick.svg) no-repeat;
+	background: url(../pic/ic_tick.svg) no-repeat;
 }
 
 /*page list_articles*/
@@ -493,14 +505,12 @@ a {
 	color: #E55241;
 }
 .nav-icon-l{
-	background-image: url(pic/ic_arrowL.svg);
-	background-repeat: no-repeat;
+	background: url(../pic/ic_arrowL.svg) no-repeat center;
 	background-size: auto;
-	background-position: center;
 	height: 100%;
 }
 .nav-icon-r{
-	background-image: url(pic/ic_arrowR.svg);
+	background-image: url(../pic/ic_arrowR.svg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: center;
@@ -602,12 +612,12 @@ a {
 .contacts-it{
 	padding: 7px 15px 7px 20px;
 
-	background: url(pic/ic_circle.svg) no-repeat;
+	background: url(../pic/ic_circle.svg) no-repeat;
 	background-size: auto;
 	background-position: left center;
 }
 .mail{
-	background: url(pic/ic_mail.svg) no-repeat;
+	background: url(../pic/ic_mail.svg) no-repeat;
 	background-position: 48% 50%;
 }
 .mail a{
@@ -631,7 +641,7 @@ a {
 .question button{
 	width: 100%;
 	text-align: left;
-	background: url(pic/ic_wh_arrow.svg) no-repeat;
+	background: url(../pic/ic_wh_arrow.svg) no-repeat;
 	background-size: auto;
 	background-position: 93%;
 
@@ -670,7 +680,7 @@ a {
 .ic-copyright{
 	padding-left: 40px;
 
-	background: url(pic/ic_copyright.svg) no-repeat;
+	background: url(../pic/ic_copyright.svg) no-repeat;
 	background-size: auto;
 }
 .btn-danger{
@@ -683,13 +693,13 @@ a {
 .history-head{
 	padding-left: 40px;
 
-	background: url(pic/ic_pen.svg) no-repeat;
+	background: url(../pic/ic_pen.svg) no-repeat;
 	background-size: auto;
 }
 .special-head{
 	padding-left: 40px;
 
-	background: url(pic/ic_special.svg) no-repeat;
+	background: url(../pic/ic_special.svg) no-repeat;
 	background-size: auto;
 }
 .quote {
@@ -699,7 +709,7 @@ a {
 	padding: 33px 15px 33px 45px;
 	border-left: 5px solid #468e87;
 
-	background: url(pic/ic_quote.svg) no-repeat;
+	background: url(../pic/ic_quote.svg) no-repeat;
 	background-position: 2% 35%;
 	background-color: #f7f7f7;
 }
@@ -707,25 +717,25 @@ a {
 .handwpen-head{
 	padding-left: 40px;
 
-	background: url(pic/ic_handwpen.svg) no-repeat;
+	background: url(../pic/ic_handwpen.svg) no-repeat;
 	background-size: auto;
 }
 .roundcopy-head{
 	padding-left: 40px;
 
-	background: url(pic/ic_roundcopyright.svg) no-repeat;
+	background: url(../pic/ic_roundcopyright.svg) no-repeat;
 	background-size: auto;
 }
 .megaphone-head{
 	padding-left: 40px;
 
-	background: url(pic/ic_megaphone.svg) no-repeat;
+	background: url(../pic/ic_megaphone.svg) no-repeat;
 	background-size: auto;
 }
 .values-head{
 	padding-left: 40px;
 
-	background: url(pic/ic_like.svg) no-repeat;
+	background: url(../pic/ic_like.svg) no-repeat;
 	background-size: auto;
 }
 .values-list{
@@ -735,7 +745,7 @@ a {
 .values-it{
 	padding: 7px 15px 7px 40px;
 
-	background: url(pic/main_list.svg) no-repeat;
+	background: url(../pic/main_list.svg) no-repeat;
 	background-size: auto;
 	background-position: left center;
 }
@@ -753,7 +763,7 @@ a {
 	margin-right: 60px;
 }
 .tabs_element {
-	background-image: url(pic/ic_right.svg);
+	background-image: url(../pic/ic_right.svg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: right center;
@@ -779,7 +789,7 @@ a {
 	color: #E55241;
 }
 .tabs_bg {
-	background-image: url(pic/map-img.svg);
+	background-image: url(../pic/map-img.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position-x: 5px;
