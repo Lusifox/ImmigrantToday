@@ -150,55 +150,58 @@
   </header>
 
   <main>
-    <section class="contacts container-xl">
-      <div class="col-8">
-        <div class="contacts-head">
-          <h2>Контакты</h2>
-          <p>
-            Есть вопрос? Задайте его нам!
-          </p>
-        </div>
-        <img src="pic/contacts.jpg">
-        <div class="contacts-text">
-          <p>
-            Мы будем рады ответить на любые ваши вопросы. В зависимости от их сложности, нам может понадобиться дополнительная консультация со сторонними специалистами. Поэтому ответ может занять несколько дней, но обычно мы отвечаем в течение нескольких часов.
-          </p>
-          <p>
-            Как и вы, мы ценим свое время. Поэтому просим вас сперва попробовать найти информацию на сайте самостоятельно и только после этого писать нам.
-          </p>
-          <p>
-            Кстати, чем более подробно вы опишите свою ситуацию, тем больше вариантов для иммиграции мы сможем предложить. Для оценки шансов на эмиграцию мы разработали специальную анкету. Заполните ее и получите автоматическую оценку шансов на вашу электронную почту.
-          </p>
-          <p class="mail">
-            Связаться с нами лучше всего по электронной почте: &nbsp &nbsp &nbsp &nbsp <a href="">mail@immigrant.today</a>
-          </p>
-          <p>
-            Если вы написали нам и не получили ответ в течение 3 дней, проверьте, пожалуйста, папку спама. Иногда наши письма попадают туда.
-          </p>
-          <ul class="contacts-list">
-            <li class="contacts-it">
-              Папка спама в Gmail
-            </li>
-            <li class="contacts-it">
-              Папка спама в Яндекс.Почте
-            </li>
-            <li class="contacts-it">
-              Папка спама в mail.ru
-            </li>
-          </ul>
-        </div>
-        </div>
-      </div>
+    <section class="contacts">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-8">
+            <div class="contacts-head">
+              <h2>Контакты</h2>
+              <p>
+                Есть вопрос? Задайте его нам!
+              </p>
+            </div>
+            <img src="pic/contacts.jpg">
+            <div class="contacts-text">
+              <p>
+                Мы будем рады ответить на любые ваши вопросы. В зависимости от их сложности, нам может понадобиться дополнительная консультация со сторонними специалистами. Поэтому ответ может занять несколько дней, но обычно мы отвечаем в течение нескольких часов.
+              </p>
+              <p>
+                Как и вы, мы ценим свое время. Поэтому просим вас сперва попробовать найти информацию на сайте самостоятельно и только после этого писать нам.
+              </p>
+              <p>
+                Кстати, чем более подробно вы опишите свою ситуацию, тем больше вариантов для иммиграции мы сможем предложить. Для оценки шансов на эмиграцию мы разработали специальную анкету. Заполните ее и получите автоматическую оценку шансов на вашу электронную почту.
+              </p>
+              <p class="mail">
+                Связаться с нами лучше всего по электронной почте: &nbsp &nbsp &nbsp &nbsp <a href="">mail@immigrant.today</a>
+              </p>
+              <p>
+                Если вы написали нам и не получили ответ в течение 3 дней, проверьте, пожалуйста, папку спама. Иногда наши письма попадают туда.
+              </p>
+              <ul class="contacts-list">
+                <li class="contacts-it">
+                  Папка спама в Gmail
+                </li>
+                <li class="contacts-it">
+                  Папка спама в Яндекс.Почте
+                </li>
+                <li class="contacts-it">
+                  Папка спама в mail.ru
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      <div class="col-3 ">
-        <div class="question">
-          <h4>У вас есть вопросы?</h4>
-          <p>
-            Мы оцифровали все иммиграционные программы и поможем вам переехать в Канаду!
-          </p>
-          <button type="button" class="btn btn-danger btn-lg">
-            Получить консультацию
-          </button>
+          <div class="col-3 ">
+            <div class="question">
+              <h4>У вас есть вопросы?</h4>
+              <p>
+                Мы оцифровали все иммиграционные программы и поможем вам переехать в Канаду!
+              </p>
+              <button type="button" class="btn btn-danger btn-lg">
+                Получить консультацию
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -218,14 +221,20 @@
           </p>
         </div>
 
-        <form class="signup-form col-6" name="signup-form" autocomplete="on">
+        <form class="signup-form col" name="signup-form" autocomplete="on">
           <label for="signup-form" class="signup-form__label">
-            <div class="row justify-content-between">
-              <input class="form-control form-control-lg col" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
-              <input class="form-control form-control-lg col" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
+            <div class="row">
+              <div class="input-group input-group-lg col">
+                <input class="form-control form-control-lg col" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
+              </div>
+              <div class="input-group input-group-lg col">
+                <input class="form-control form-control-lg col" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
+              </div>
             </div>
-            <div class="row justify-content-between">
-              <input class="form-control form-control-lg col" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
+            <div class="row">
+              <div class="input-group input-group-lg col">
+                <input class="form-control form-control-lg col" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
+              </div>
               <div class="input-group flex-nowrap col">
                 <span class="input-group-text" id="addon-wrapping">9 + 3 =</span>
                 <input type="text" class="form-control form-control-lg" placeholder="Введите ответ" aria-label="Username" aria-describedby="addon-wrapping">
@@ -235,7 +244,7 @@
           <label>
             <div class="checkbox__icon row">
               <input class="checkbox" type="checkbox" id="checkbox" name="checkbox"value="user-agreement" required>
-              <!-- <img src="pic/ic_tick.svg"> -->
+              <img src="pic/ic_tick.svg">
             </div>
             Я согласен(а) на обработку моих персональных данных
 
@@ -367,13 +376,17 @@
     </div>
   </div>
 
-  <div class="copyright container-xl">
-    <div class="copyright_heading col">
-      &#169;2015-2021 Imigrant.Today
-    </div>
-    <div class="col">
-      <a href="#">Условия использования</a>
-      <a href="#">Политика конфиденциальности</a>
+  <div class="copyright">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col">
+          &#169; 2015-2021 Imigrant.Today
+        </div>
+        <div class="col polit">
+          <a href="#">Условия использования</a>
+          <a href="#" class="politik">Политика конфиденциальности</a>
+        </div>
+      </div>
     </div>
   </div>
 
