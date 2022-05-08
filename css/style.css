@@ -84,8 +84,8 @@ h4{
 }
 .logo-over-card {
 	position: absolute;
-	top: 12px;
-	left: 12px;
+	background: url(../pic/logo_mini.svg) no-repeat;
+	background-position: left;
 }
 
 
@@ -122,37 +122,12 @@ h4{
 	background: url(../pic/main_list.svg) no-repeat;
 	background-size: contain;
 }
-/*.main-image-stack{
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	position: relative;
-	background: #F4F4F4 url(../pic/bg-offer.svg) no-repeat;
-	background-size: 100% 100%;
-}*/
+
 .main-image-stack_item1 {
 	grid-column: 12;
 	grid-row: 1;
 }
-/*Это чистой воды порнуха, причем не красивая эротика, а а грязное извращенческое порево...*/
-/*.main-image-stack_item2 {
-	grid-column: 10 / a 8;
-	position: relative;
-	grid-row: 1; 
-	padding-top: 10%; 
-	z-index: 1; 
-}*/
-/*.main-image-stack_item2 img {
-	position: absolute;
-	bottom: 0;
-}
-.main-image-stack_item3 {
-	grid-row: 1;
-	padding-top: 110px; 
-	grid-column: 11;
-}
-.main-image-stack_item3 img {
-	margin-top: 40px;
-}*/
+
 .offer-title{
 	font-weight: 700;
 	margin-bottom: 20px;
@@ -162,7 +137,6 @@ h4{
 	flex-direction: column;
 	justify-content: center;
 	width: 620px;
-	/*padding-left: 60px; Откуда вы взяли этот падинг на макете его нет!!! */
 }
 .main-ul-stack {
 	padding-left: 0;
@@ -170,7 +144,7 @@ h4{
 
 
 section{
-	padding: 40px 0px 50px ;
+	padding: 60px 0px 60px ;
 }
 
 .bg-grey {
@@ -178,7 +152,8 @@ section{
 }
 .links{
 	background-size: auto;
-	background: url(../pic/ic_arrow.svg) no-repeat right center;
+	background: url(../pic/ic_arrow.svg) no-repeat;
+	background-position: right 65%;
 }
 .popularity,
 .immigration,
@@ -214,7 +189,7 @@ section{
 	color: #E55241;
 	font-size: 20px;
 	line-height: 20px;
-	text-align: end;
+	padding-right: 25px;
 }
 .section-head a:hover{
 	color: #E55241;
@@ -269,12 +244,22 @@ section{
 	display: flex;
 	flex-direction: column;
 }
+.card-height {
+	height: 100%;
+}
 .card {
 	border-radius: 10px !important;
-	height: 100%;
-
-	background: url(../pic/logo_mini.svg) no-repeat 4% 10%;
-	background-size: auto;
+}
+.card:after {
+	content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    background: url(../pic/logo_mini.svg) no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 .btn-inf {
@@ -294,6 +279,8 @@ section{
 .card-price{
 	display: flex;
 	justify-content: space-between;
+
+	margin-top: auto;
 }
 .prices{
 	list-style: none;
@@ -328,12 +315,13 @@ section{
 .news_title a:hover {
 	color: #E55241;
 }
+.news_title h3{
+	padding-bottom: 15px;
+}
 
 .general_item,
 .news_item {
 	list-style: none;
-	width: 380px;
-	/*margin-right: 15px;*/
 }
 .general_item a,
 .news_item a{
@@ -343,17 +331,25 @@ section{
 	line-height: 24px;
 	border-radius: 10px;
 }
+.news_question{
+	font-size: 18px;
+	line-height: 26px;
+}
+.news_question img{
+	height: 100%;
+    width: 100%;
+}
 .news_item p{
-	padding-top: 10px;
+	padding: 20px 0;
 }
 .news_item button{
 	width: 100%;
 	text-align: center;
 	background: url(../pic/ic_wh_arrow.svg) no-repeat;
-	background-size: auto;
 	background-position: 83% 52%;
 
-	background-color: #dc3545;
+	background-color: #E55241;
+	padding: 25px;
 }
 .general_list,
 .news_list {
@@ -365,6 +361,7 @@ section{
 	display: flex;
 	margin-bottom: 1px;
 	background-color: #ffffff;
+
 }
 .list_element:hover, .list_element:focus {
 	background-color: #fff6f6;
@@ -395,22 +392,18 @@ section{
 .main-project {
 	display: flex;
 	justify-content: center;
-
-	background: url(../pic/grey_bg.svg) no-repeat;
-	padding: 65px 0;
 }
 .project-text-stack{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
-	width: 600px;
 	margin-left: 30px;
 }
 .project_title{
 	background: url(../pic/ic_arrow.svg) no-repeat;
 	background-size: auto;
-	background-position: right center;
+	background-position: 60% 70%;
 
 	font-weight: 700;
 	margin-bottom: 40px;
@@ -463,6 +456,11 @@ a {
 	line-height: 1.5;
 	color: #1e222e;
 }
+.checkbox__label {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+}
 .checkbox__icon {
 	display: flex;
 	justify-content: center;
@@ -481,8 +479,10 @@ a {
 .checkbox__icon:hover {
 	cursor: pointer;
 }
-.checkbox__icon:checked {
+.checkbox__icon.active {
 	background: url(../pic/ic_tick.svg) no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 /*page list_articles*/
@@ -495,6 +495,7 @@ a {
 	font-size: 14px;
 	line-height: 20px;
 	color: #1E222E;
+	padding: 20px 0;
 }
 .articles-head a{
 	text-decoration: none;
@@ -515,6 +516,10 @@ a {
 	background-size: auto;
 	background-position: center;
 	height: 100%;
+}
+.right{
+	display: flex;
+	justify-content: right;
 }
 .pagination {
 	display: flex;
@@ -543,6 +548,7 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	background-color: #F4F4F4;
+	padding: 10px 0;
 }
 .close a{
 	text-decoration: none;
@@ -555,16 +561,36 @@ a {
 	text-decoration: none;
 	color: #E55241;
 }
-.close a{
-	padding: 20px 15px;
-	color: #000000;
-}
 /*end list_articles*/
 
 
-/*page article*/
+/*page category_article*/
+.category{
+	padding-bottom: 10px;
+}
+.col-3 div {
+	margin-bottom: 35px;
+}
+.question img {
+	margin: 20px 0px;
+}
+.shadow{
+	box-shadow: -5px 0px 7px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 30px 15px;
+}
+.similar_list{
+	list-style: none;
+	padding-left: 0;
+}
+.important_art{
+	padding-left: 5px;
+	padding-bottom: 0;
+}
 
-/*end article*/
+/*end category_article*/
 
 /*page courses*/
 
@@ -573,6 +599,9 @@ a {
 }
 .courses-head{
 	margin: 30px 0px 20px;
+}
+.serv{
+	padding: 20px 0 60px;
 }
 .services p,
 .courses p{
@@ -589,13 +618,6 @@ a {
 	line-height: 24px;
 	padding-left: 0px;
 }
-.card-price-c{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
-}
-
 /*end courses*/
 
 /*page contacts*/
@@ -684,6 +706,7 @@ a {
 	background-size: auto;
 }
 .btn-danger{
+	background: #E55241;
 	background-color: #E55241;
 	border-color: #E55241;
 }
@@ -751,6 +774,71 @@ a {
 }
 /*end about project*/
 
+/* page password_recovery*/
+.recovery-password {
+	padding-top: 15px;
+	padding-bottom: 150px;
+}
+.back-link{
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	color: #AFB2C4;
+	background: url(../pic/ic_backarrow.svg) no-repeat left center;
+	padding-left: 15px;
+
+}
+.recovery-password a:hover{
+	color: #E55241;
+}
+.login_link {
+	display: flex;
+    justify-content: center;
+
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: underline;
+	color: #e55241;
+}
+.login_title{
+	margin: 20px 0 30px;
+}
+.recover-form{
+	display: flex;
+	justify-content: center;
+}
+.recover-form button{
+	width: 100%;
+	margin: 20px 0;
+}
+/* end password_recovery*/
+
+
+.input-group{
+	padding: 10px 0px;
+}
+.form-control-lg {
+    padding: 1rem 1rem;
+}
+
+/* page create_lk */
+
+.create-account {
+	padding-top: 15px;
+	padding-bottom: 150px;
+}
+
+
+/* end create_lk */
+
+
+/* page input_lk */
+.authorization{
+	padding-top: 15px;
+	padding-bottom: 60px;
+}
+
+/* end input_lk */
 
 .page-footer{
 	background: #272727;
@@ -825,6 +913,8 @@ a {
 
 .copyright {
 	display: flex;
+	align-content: center;
+
 	padding: 15px;
 
 	background-color: #202020;
@@ -833,6 +923,8 @@ a {
 .copyright a{
 	text-decoration: none;
 	color: #ffffff;
+	padding: 7px;
+
 }
 .copyright a:hover{
 	text-decoration: none;
@@ -845,67 +937,23 @@ a {
 	line-height: 1.5;
 	color: #ffffff;
 }
-
-/*
-.navbar .navbar-nav .nav-link {
-    padding: 0.6rem 1rem;
-    transition: all .2s ease-in-out;
+.politik{
+	padding: 7px;
+	position: relative;
 }
-.navbar .search-open .search {
-    display: block;
-}
-.navbar .search {
-    display: none;
+.politik:before {
+    content: '';
+    border-left: 2px solid rgba(255,255,255,.5);
     position: absolute;
-    top: 0;
-    right: 96%;
-    z-index: 100;
-    width: 360px;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
+    left: 0;
+    top: 10%;
+    height: 85%;
+    padding-left: 10px;
 }
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+.polit{
+	display: flex;
+    justify-content: flex-end;
 }
-.animated {
-    -webkit-animation-duration: .25s;
-    animation-duration: .25s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.form-control-reset {
-    border: 0;
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.w-100 {
-    width: 100%!important;
-}
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-button, hr, input {
-    overflow: visible;
-}
-.form-control {
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-image: none;
-    background-clip: padding-box;
-    border: 2px solid #ced4da;
-    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
-}*/
-
 
 .search{
 	display: flex;
