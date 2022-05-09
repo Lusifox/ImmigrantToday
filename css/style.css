@@ -253,10 +253,10 @@ section{
 .card:after {
 	content: "";
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 15px;
+    top: 15px;
     width: 35px;
-    height: 35px;
+	height: 40px;
     background: url(../pic/logo_mini.svg) no-repeat;
     background-size: 100%;
     background-position: center;
@@ -356,6 +356,14 @@ section{
 	background-color: #f3f3f3;
 	padding-left: 0;
 }
+/*.general_bg img:after {
+	content: "";
+    position: absolute;
+
+	background: url(../pic/grey_bg.svg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}*/
 
 .list_element {
 	display: flex;
@@ -574,6 +582,19 @@ a {
 .question img {
 	margin: 20px 0px;
 }
+.article{
+
+}
+.art-title{
+	padding-top: 20px;
+	font-size: 18px;
+	line-height: 24px;
+}
+.article-view{
+	padding: 15px 0 25px;
+	align-items: center;
+
+}
 .shadow{
 	box-shadow: -5px 0px 7px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
 	border-radius: 10px;
@@ -588,6 +609,74 @@ a {
 .important_art{
 	padding-left: 5px;
 	padding-bottom: 0;
+}
+.article-bookmark{
+	padding-left: 30px;
+	background: url(../pic/ic_bookmark.svg) no-repeat;
+	background-position: left center;
+}
+.article-bookmark a{
+	padding-left: 10px;
+	text-decoration: none;
+	color: #3A3E48;
+}
+.article-bookmark a:hover {
+	color: #3A3E48;
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 42px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: lightgrey;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: #FADB14;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #FADB14;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #FADB14;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+.article-list{
+	list-style: none;
+	padding-left: 0;
+}
+.article-it{
+	padding: 5px 15px 5px 20px;
+
+	background: url(../pic/ic_circle.svg) no-repeat;
+	background-size: auto;
+	background-position: left center;
+}
+.list-title{
+	margin-bottom: 5px;
+	font-size: 24px;
+	line-height: 36px;
 }
 
 /*end category_article*/
