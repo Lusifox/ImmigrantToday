@@ -252,14 +252,14 @@ section{
 }
 .card:after {
 	content: "";
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    width: 35px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	width: 35px;
 	height: 40px;
-    background: url(../pic/logo_mini.svg) no-repeat;
-    background-size: 100%;
-    background-position: center;
+	background: url(../pic/logo_mini.svg) no-repeat;
+	background-size: 100%;
+	background-position: center;
 }
 
 .btn-inf {
@@ -337,7 +337,7 @@ section{
 }
 .news_question img{
 	height: 100%;
-    width: 100%;
+	width: 100%;
 }
 .news_item p{
 	padding: 20px 0;
@@ -582,8 +582,12 @@ a {
 .question img {
 	margin: 20px 0px;
 }
-.article{
-
+.article a{
+	text-decoration: none;
+	color: #E55241;
+}
+.article a:hover {
+	color: #E55241;
 }
 .art-title{
 	padding-top: 20px;
@@ -593,7 +597,11 @@ a {
 .article-view{
 	padding: 15px 0 25px;
 	align-items: center;
-
+}
+.add{
+	padding: 20px;
+	padding-right: 0;
+	margin: 30px 0;
 }
 .shadow{
 	box-shadow: -5px 0px 7px rgba(190, 190, 190, 0.25), 5px 5px 10px rgba(190, 190, 190, 0.25);
@@ -677,6 +685,153 @@ a {
 	margin-bottom: 5px;
 	font-size: 24px;
 	line-height: 36px;
+}
+.add button{
+	height: 80%;
+	width: 48%;
+}
+
+.hashtag{
+	
+}
+.tag-list{
+	list-style: none;
+	padding-left: 12px;
+}
+.tag-list a{
+	color: #1E222E;
+}
+.tag-list a:hover {
+	color: #FFFFFF;
+	background: #E55241;
+}
+.tag-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 10px;
+	background: #FFF6F6;
+	border: 1px dashed #E55241;
+	border-radius: 100px;
+}
+.hashtag span{
+	font-size: 16px;
+	line-height: 30px;
+	color: #E55241;
+}
+.art-price{
+	list-style: none;
+	padding-left: 0px;
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 700;
+}
+.mikro-news{
+	font-size: 14px;
+	line-height: 20px;
+}
+.banner{
+	padding: 30px 0 50px;
+}
+
+
+.comments {
+	padding-top: 24px;
+	border-top: 2px solid #dbdfec;
+}
+.comments-title{
+	padding: 20px 0;
+}
+.comments_list{
+	list-style: none;
+
+}
+.comments__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.comments__headings {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.55556;
+	color: #1e222e;
+}
+.comments__btn {
+	display: block;
+	padding: 15px 42.5px;
+	font-size: 14px;
+	line-height: 1.42857;
+}
+.comments_el {
+	padding-bottom: 16px;
+	border-bottom: 2px solid #dbdfec;
+}
+.comments_el:not(:first-child) {
+	padding-top: 16px;
+}
+.comments-user {
+	display: flex;
+	margin-bottom: 15px;
+}
+.comments-info {
+	margin-left: 25px;
+}
+.comments-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #1e222e;
+	margin-bottom: 0;
+}
+.comments-date {
+	font-size: 14px;
+	line-height: 20px;
+}
+.comments-text{
+	display: flex;
+}
+.comments-like {
+	display: flex;
+    justify-content: flex-end;
+    
+	background: url(../pic/ic_heart.svg) no-repeat;
+	background-position: 80% 10%;
+
+	font-size: 14px;
+	line-height: 20px;
+
+	color: #E55241;
+}
+.comments-btn {
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 15px;
+	text-transform: uppercase;
+	border: none;
+	background-color: transparent;
+	color: #e55241;
+}
+.comments-reply {
+	display: flex;
+
+	background: url(../pic/ic_reply.svg) no-repeat;
+	background-position: 0% 10%;
+	margin-left: 15px;
+    padding-left: 20px;
+	color: #a6a6a6;
+}
+.comments-replied {
+	margin: 20px 0 0 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+	padding-bottom: 0;
+	border-left: 2px solid #dbdfec;
+	border-bottom: none;
 }
 
 /*end category_article*/
@@ -882,7 +1037,7 @@ a {
 }
 .login_link {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 
 	line-height: 1.5;
 	text-align: center;
@@ -907,7 +1062,7 @@ a {
 	padding: 10px 0px;
 }
 .form-control-lg {
-    padding: 1rem 1rem;
+	padding: 1rem 1rem;
 }
 
 /* page create_lk */
@@ -1031,17 +1186,17 @@ a {
 	position: relative;
 }
 .politik:before {
-    content: '';
-    border-left: 2px solid rgba(255,255,255,.5);
-    position: absolute;
-    left: 0;
-    top: 10%;
-    height: 85%;
-    padding-left: 10px;
+	content: '';
+	border-left: 2px solid rgba(255,255,255,.5);
+	position: absolute;
+	left: 0;
+	top: 10%;
+	height: 85%;
+	padding-left: 10px;
 }
 .polit{
 	display: flex;
-    justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 .search{
