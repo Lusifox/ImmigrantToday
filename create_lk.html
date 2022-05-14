@@ -156,22 +156,27 @@
           Назад
         </a>
 
-        <div class="col">
-          <form class="signup-form col" name="signup-form" autocomplete="on">
-            <h2>Создать учетную запись</h2>
+        <div class="col create">
+          <form class="signup-form" name="signup-form" autocomplete="on">
+            <h2 class="create-hed">Создать учетную запись</h2>
             <label for="signup-form" class="signup-form__label">
-              <input class="form-control form-control-lg" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
-              <input class="form-control form-control-lg" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
-              <input class="form-control form-control-lg" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
+              <div class="input-group input-group-lg">
+                <input class="form-control form-control-lg" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
+              </div>
+              <div class="input-group input-group-lg">
+                <input class="form-control form-control-lg" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
+              </div>
+              <div class="input-group input-group-lg">
+                <input class="form-control form-control-lg" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
+              </div>
               <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping">9 + 3 =</span>
                 <input type="text" class="form-control form-control-lg" placeholder="Введите ответ" aria-label="Username" aria-describedby="addon-wrapping">
               </div>
             </label>
-            <label>
-              <div class="checkbox__icon row">
-                <input class="checkbox" type="checkbox" id="checkbox" name="checkbox"value="user-agreement" required>
-                <img src="pic/ic_tick.svg">
+            <label class="checkbox__label">
+              <div class="checkbox__icon">
+                <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" required>
               </div>
               Я согласен(а) на обработку моих персональных данных
 
@@ -179,26 +184,23 @@
 
             <div class="btn_wrapper">
               <button type="button" class="btn btn-danger btn-lg">
-                Зарегистироваться
-              </button>
-              <button type="button" class="btn btn-outline-danger btn-lg">
-                Войти в аккаунт
+                Войти
               </button>
             </div>
           </form>
-          
-          <div class="signup">
-            <h2 class="signup__title">
-              У вас нет учетной записи?
-            </h2>
-            <pre class="signup__text">
-              Станьте членом сообщества, чтобы разблокировать
-              функции, которые предназначены только для
-              зарегестированных пользователей
-            </pre>
+        </div>
 
-            <button type="button" class="btn btn-danger btn-lg">
-              Зарегистироваться
+        <div class="signup col">
+          <div class="signup_">
+            <h2 class="signup_title">
+              У вас уже есть аккаунт
+            </h2>
+            <p class="signup_text">
+              Если вы уже зарегестрировались и являетесь частью сообщества,<br>введите данные на странице авторизации
+            </p>
+
+            <button type="button" class="btn btn-outline-danger btn-lg">
+              Авторизоваться
             </button>
           </div>
         </div>
@@ -337,6 +339,19 @@
 </footer>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
+<script>
+  var ch = document.getElementById('checkbox');
+  ch.addEventListener("click", toggleCheck);
 
+  function toggleCheck(){
+    var dv = document.getElementsByClassName('checkbox__icon');
+    if(dv[0].classList.contains('active')){
+      dv[0].classList.remove('active');
+    }
+    else{
+      dv[0].classList.add('active');
+    }
+  }
+</script>
+</body>
 </html>

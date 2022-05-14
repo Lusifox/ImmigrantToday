@@ -206,59 +206,60 @@
       </div>
     </section>
 
-    <section class="container-xl">
-      <div class="join-container justify-content-between">
-        <div class="join col-5 justify-content-between">
-          <h3 class="join-header">
-            Стать членом сообщества
-          </h3>  
+    <section>
+      <div class="container-xl">
+        <div class="join-container">
+          <div class="join col justify-content-between">
+            <h3 class="join-header">
+              Стать членом сообщества
+            </h3>  
 
-          <p class="join_text">
-            Получите профессиональные советы об иммиграции в Канаду, новости, стратегии и опыт других людей.
-          </p>
-          <p class="join_text">
-            Нас уже - <span class="bold">55574</span> человек (а)
-          </p>
-        </div>
-
-        <form class="signup-form col" name="signup-form" autocomplete="on">
-          <label for="signup-form" class="signup-form__label">
-            <div class="row">
-              <div class="input-group input-group-lg col">
-                <input class="form-control form-control-lg col" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
-              </div>
-              <div class="input-group input-group-lg col">
-                <input class="form-control form-control-lg col" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-group input-group-lg col">
-                <input class="form-control form-control-lg col" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
-              </div>
-              <div class="input-group flex-nowrap col">
-                <span class="input-group-text" id="addon-wrapping">9 + 3 =</span>
-                <input type="text" class="form-control form-control-lg" placeholder="Введите ответ" aria-label="Username" aria-describedby="addon-wrapping">
-              </div>
-            </div>
-          </label>
-          <label>
-            <div class="checkbox__icon row">
-              <input class="checkbox" type="checkbox" id="checkbox" name="checkbox"value="user-agreement" required>
-              <img src="pic/ic_tick.svg">
-            </div>
-            Я согласен(а) на обработку моих персональных данных
-
-          </label>
-
-          <div class="btn_wrapper">
-            <button type="button" class="btn btn-danger btn-lg">
-              Зарегистироваться
-            </button>
-            <button type="button" class="btn btn-outline-danger btn-lg">
-              Войти в аккаунт
-            </button>
+            <p class="join_text">
+              Получите профессиональные советы об иммиграции в Канаду, новости, стратегии и опыт других людей.
+            </p>
+            <p class="join_text">
+              Нас уже - <span class="bold">55574</span> человек (а)
+            </p>
           </div>
-        </form>
+
+          <form class="signup-form col" name="signup-form" autocomplete="on">
+            <label for="signup-form" class="signup-form__label">
+              <div class="row">
+                <div class="input-group input-group-lg col">
+                  <input class="form-control form-control-lg col" type="text" placeholder="Ваше имя" aria-label=".form-control-lg example">
+                </div>
+                <div class="input-group input-group-lg col">
+                  <input class="form-control form-control-lg col" type="text" placeholder="Ваш e-mail" aria-label=".form-control-lg example">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-group input-group-lg col">
+                  <input class="form-control form-control-lg col" type="text" placeholder="Пароль" aria-label=".form-control-lg example">
+                </div>
+                <div class="input-group flex-nowrap col">
+                  <span class="input-group-text" id="addon-wrapping">9 + 3 =</span>
+                  <input type="text" class="form-control form-control-lg" placeholder="Введите ответ" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+              </div>
+            </label>
+            <label class="checkbox__label">
+              <div class="checkbox__icon">
+                <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" required>
+              </div>
+              Я согласен(а) на обработку моих персональных данных
+
+            </label>
+
+            <div class="btn_wrapper">
+              <button type="button" class="btn btn-danger btn-lg">
+                Зарегистироваться
+              </button>
+              <button type="button" class="btn btn-outline-danger btn-lg">
+                Войти в аккаунт
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -393,6 +394,19 @@
 </footer>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
+<script>
+  var ch = document.getElementById('checkbox');
+  ch.addEventListener("click", toggleCheck);
 
+  function toggleCheck(){
+    var dv = document.getElementsByClassName('checkbox__icon');
+    if(dv[0].classList.contains('active')){
+      dv[0].classList.remove('active');
+    }
+    else{
+      dv[0].classList.add('active');
+    }
+  }
+</script>
+</body>
 </html>

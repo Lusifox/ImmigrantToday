@@ -487,10 +487,9 @@
                 </div>
               </div>
             </label>
-            <label>
-              <div class="checkbox__icon row">
-                <input class="checkbox" type="checkbox" id="checkbox" name="checkbox"value="user-agreement" required>
-                <img src="pic/ic_tick.svg">
+            <label class="checkbox__label">
+              <div class="checkbox__icon">
+                <input class="checkbox" type="checkbox" id="checkbox" name="checkbox" required>
               </div>
               Я согласен(а) на обработку моих персональных данных
 
@@ -640,7 +639,20 @@
 
 </footer>
 
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script>
+  var ch = document.getElementById('checkbox');
+  ch.addEventListener("click", toggleCheck);
 
+  function toggleCheck(){
+    var dv = document.getElementsByClassName('checkbox__icon');
+    if(dv[0].classList.contains('active')){
+      dv[0].classList.remove('active');
+    }
+    else{
+      dv[0].classList.add('active');
+    }
+  }
+</script>
+</body>
 </html>
